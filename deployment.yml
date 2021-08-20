@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: http-app
-        image: kavya579/repo1:latest
+        image: kavya579/repo1:stable
         ports:
         - containerPort: 80
 ---
