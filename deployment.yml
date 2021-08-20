@@ -17,6 +17,7 @@ spec:
       containers:
       - name: http-app
         image: kavya579/repo1:stable
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
