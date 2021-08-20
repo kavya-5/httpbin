@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-app
+  labels:
+    app: http-app
+spec:
+  replicas: 1
+  selector:
+  template:
+    metadata:
+      labels:
+        app: http-app
+    spec:
+      containers:
+      - name: http-app
+        image: kavya579/repo1:latest
+        ports:
+        - containerPort: 80
